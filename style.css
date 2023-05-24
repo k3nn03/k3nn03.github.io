@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('fotos/daniel-leone-g30P1zcOzXo-unsplash.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    background-attachment: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #000000, transparent);
+  }
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 101vh;
+    font-size: 20px;
+    margin-right: 65px;
+    margin-left: 65px;
+    
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 5s;
+}
+
+
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 101px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a { 
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover
+{
+    background: #fff;
+    color: #000;
+
+}
+
+.logos{
+    display: flex;
+}
+
+.logo:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.logo:nth-child(3){
+    transition-delay: 500ms;
+}
+
+.logo:nth-child(4){
+    transition-delay: 700ms;
+}
+
+.logoa {
+    background-color: #2b2a2a;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 0 0.5rem;
+}
+
+.ordenador{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    background-color: #2b2a2a;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 0 0.5rem;
+}
+
+.ordenador:nth-child(2){
+    transition-delay: 700ms;
+}
+
+.engranaje{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    padding: 1rem;
+    margin: 0 0.5rem;
+}
+
+.engranaje:nth-child(2){
+    transition-delay: 700ms;
+}
+
+
+.calidad{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    padding: 1rem;
+    margin: 0 0.5rem;
+}
+
+.calidad:nth-child(2){
+    transition-delay: 700ms;
+}
+
+.texto{
+    background: black;
+}
+
+.texto{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    padding: 1rem;
+    margin: 0 0.5rem;
+}
+
+.texto:nth-child(2){
+    transition-delay: 700ms;
+}
